@@ -18,9 +18,9 @@ build: $(CMD_TARGETS)
 	${QUIET} docker build --build-arg VERSION=${VERSION} -t ${DOCKER_IMAGE}:latest --file src/docker/Dockerfile .
 
 release:
-	${QUIET} docker tag ${DOCKER_IMAGE}:latest ${DOCKER_IMAGE}:$VERSION
+	${QUIET} docker tag ${DOCKER_IMAGE}:latest ${DOCKER_IMAGE}:${VERSION}
 	${QUIET} docker push ${DOCKER_IMAGE}:latest
-	${QUIET} docker push ${DOCKER_IMAGE}:$VERSION
+	${QUIET} docker push ${DOCKER_IMAGE}:${VERSION}
 
 run: mkfile_dir := $(shell basename ${mkfile_dir_path})
 run:
