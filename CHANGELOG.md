@@ -5,8 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [v0.3.0] - 2020-01-26
 ### Added
 - add `coreutils` to docker image
+
 
 ## [v0.2.0] - 2020-01-26
 ### Added
@@ -34,7 +36,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/helstern/version-tools/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/helstern/version-tools/compare/v0.3.0...HEAD
+[v0.3.0]: https://github.com/helstern/version-tools/compare/v0.2.0...v0.3.0
 [v0.2.0]: https://github.com/helstern/version-tools/compare/v0.1.1...v0.2.0
 [v0.1.1]: https://github.com/helstern/version-tools/compare/v0.1.0...v0.1.1
 [v0.1.0]: https://github.com/helstern/version-tools/compare/d036db0...v0.1.0
