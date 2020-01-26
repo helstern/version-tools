@@ -16,12 +16,12 @@ RUN apk --update add git less openssh su-exec sudo bash && \
     rm /var/cache/apk/*
 
 # Downloads
-ARG KACL_VERSION=0.0.1
+ARG KACL_VERSION=v0.2.1
 ARG KACL_ARCH=linux_amd64
 
 RUN \
     # KACL - keep a changelog utility
-    wget https://github.com/nicwest/kacl/releases/download/${KACL_VERSION}/kacl-${KACL_VERSION}-${KACL_ARCH}.tar.gz -O /tmp/kacl-${KACL_VERSION}-${KACL_ARCH}.tar.gz && \
+    wget https://github.com/helstern/kacl/releases/download/${KACL_VERSION}/kacl-${KACL_VERSION}-${KACL_ARCH}.tar.gz -O /tmp/kacl-${KACL_VERSION}-${KACL_ARCH}.tar.gz && \
     tar -zx  -C /usr/bin -f /tmp/kacl-${KACL_VERSION}-${KACL_ARCH}.tar.gz && \
     rm /tmp/kacl-${KACL_VERSION}-${KACL_ARCH}.tar.gz
 
