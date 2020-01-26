@@ -30,11 +30,16 @@ ADD target/cmd /usr/bin/
 
 # Users
 RUN \
+    apk add shadow --virtual .user-deps && \
     # the principal user with passwordless sudo capabilities
     addgroup -g 1000 -S version-tools && \
     adduser -u 1000 -S versioneer -G version-tools && \
     sed -e 's/# %wheel ALL=(ALL) NOPASSWD: ALL/%wheel ALL=(ALL) NOPASSWD: ALL/g' -i /etc/sudoers && \
-    addgroup versioneer wheel
+    addgroup versioneer wheel && \
+    addgroup versioneer docker && \
+    # seems docker, at least on ubuntu, gets gid 999
+    delgroup ping && groupmod -g 999 docker && \
+    apk del .user-deps
 
 # Environment
 ARG VERSION
