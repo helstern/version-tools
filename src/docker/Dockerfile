@@ -11,7 +11,7 @@ RUN chmod 0755 /usr/bin/tagit && \
     rm /usr/bin/bumpit_test
 
 # Packages
-RUN apk --update add git less openssh su-exec sudo bash && \
+RUN apk --update add git less openssh su-exec sudo bash coreutils && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
