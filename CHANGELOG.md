@@ -5,8 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [v0.4.2] - 2020-04-05
 ### Added
 - curl and jq, required by tuol are now part of the container
+
 
 ## [v0.4.1] - 2020-01-26
 ### Fixed
@@ -47,7 +49,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/helstern/version-tools/compare/v0.4.1...HEAD
+[Unreleased]: https://github.com/helstern/version-tools/compare/v0.4.2...HEAD
+[v0.4.2]: https://github.com/helstern/version-tools/compare/v0.4.1...v0.4.2
 [v0.4.1]: https://github.com/helstern/version-tools/compare/v0.4.0...v0.4.1
 [v0.4.0]: https://github.com/helstern/version-tools/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/helstern/version-tools/compare/v0.2.0...v0.3.0
