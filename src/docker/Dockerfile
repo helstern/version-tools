@@ -16,7 +16,7 @@ RUN apk --update add git less openssh su-exec sudo bash coreutils curl jq && \
     rm /var/cache/apk/*
 
 # Downloads
-ARG KACL_VERSION=v0.2.1
+ARG KACL_VERSION=v0.3.1
 ARG KACL_ARCH=linux_amd64
 
 RUN \
