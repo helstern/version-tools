@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [v0.4.4] - 2020-10-25
+### Changed
+- use kacl v0.3.1 from github.com/helstern/kacl
+
 ## [v0.4.3] - 2020-04-05
 ### Removed
 - docker is no longer part of the container, instead the user and group have been normalized to match the values from ubuntu
@@ -54,7 +58,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - initial release
 
-[Unreleased]: https://github.com/helstern/version-tools/compare/v0.4.3...HEAD
+[Unreleased]: https://github.com/helstern/version-tools/compare/v0.4.4...HEAD
+[v0.4.4]: https://github.com/helstern/version-tools/compare/v0.4.3...v0.4.4
 [v0.4.3]: https://github.com/helstern/version-tools/compare/v0.4.2...v0.4.3
 [v0.4.2]: https://github.com/helstern/version-tools/compare/v0.4.1...v0.4.2
 [v0.4.1]: https://github.com/helstern/version-tools/compare/v0.4.0...v0.4.1
